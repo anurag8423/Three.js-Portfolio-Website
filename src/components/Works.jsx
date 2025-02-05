@@ -7,7 +7,7 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { title } from "framer-motion/client";
 
-const ProjectCard = ({ index, name, description, tags, image, source_code__link, deployment_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, deployment_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt options={{
@@ -18,7 +18,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code__link,
         <div className="relative w-full h-[230px]">
           <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl" />
           <div className="absolute inset-0 m-3 flex justify-end card-image_hover gap-2">
-            <div onClick={() => window.open(source_code__link, "__blank")} className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+            <div onClick={() => window.open(source_code_link, "__blank")} className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
               <img src={github} alt="Github" className="w-1/2 h-1/2 object-contain" />
             </div>
             <div onClick={() => window.open(deployment_link, "__blank")} className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
