@@ -1,8 +1,8 @@
 {
   "name": "3d_portfolio",
   "private": false,
-  "homepage": "https://anurag8423.github.io/Three.js-Portfolio-Website",
-  "version": "0.0.0",
+  "homepage": "https://anurag8423.github.io/ThreeJS-Portfolio-Website",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
